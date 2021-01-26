@@ -29,7 +29,7 @@ const paddle = document.createElement("div");
 paddle.style.position = "absolute";
 paddle.style.backgroundColor = "white";
 paddle.style.height = "20px";
-paddle.style.width = "100px";
+paddle.style.width = "200px";
 paddle.style.borderRadius = "25px";
 paddle.style.bottom = "30px";
 paddle.style.left = "50%";
@@ -94,7 +94,7 @@ function createBrick(pos) {
   const div = document.createElement("div");
   div.setAttribute("class", "brick");
   div.style.backgroundColor = rColor();
-  div.textContent = pos.count + 1;
+  // div.textContent = pos.count + 1;
   div.style.left = pos.x + "px";
   div.style.top = pos.y + "px";
   container.appendChild(div);
